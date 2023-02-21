@@ -60,7 +60,7 @@ def estimate_t_design_degree(tol, ω, xvals, wvals, rmax):
 
 def load_t_design(degree):
     matches = []
-    for filename in glob.glob("SS31-Mar-2016/*"):
+    for filename in glob.glob("../SS31-Mar-2016/*"):
         if f"ss{degree:03}" in filename:
             matches.append(filename)
     assert len(matches) == 1
